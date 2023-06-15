@@ -3,8 +3,9 @@ Now supports chat gpt3.5 you MUST still export your API key as OPENAI_API_KEY
 
 ## ISSUES from me: 
 
-Due to chat gpt3.5 being used, the AI will sometimes not output the correct filename format as defined in the `setup` file.
-I have tested and tried to make the regex more robust, but it is still not perfect... 
+- Due to chat gpt3.5 being used, the AI will sometimes not output the correct filename format as defined in the `setup` file.
+- I have tested and tried to make the regex more robust, but it is still not perfect... 
+- can still give janky results. Original project is preferred. This is for playing around with.
 
 re run if you have any issues.
 
