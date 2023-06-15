@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vulnerabilities</title>
+</head>
+<body>
+    <h1>Vulnerabilities</h1>
+    <form method="POST" action="{{ url_for('search') }}">
+        {{ search_form.csrf_token }}
+        {{ search_form.query.label }} {{ search_form.query }} {{ search_form.submit }}
+    </form>
+    <a href="{{ url_for('add') }}">Add new</a>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Severity</th>
+                <th>Date Created</th>
+                <th>Date Modified</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for vulnerability in vulnerabilities %}
+            <tr>
+                <td>{{ vulnerability.id }}</td>
+                <td>{{ vulnerability.title }}</td>
+                <td>{{ vulnerability.description }}</td>
+                <td>{{ vulnerability.severity }}</td>
+                <td>{{ vulnerability.date_created }}</td>
+                <td>{{ vulnerability.date_modified }}</td>
+                <td>
+                    <a href="{{ url_for('edit', id=vulnerability.id) }}">Edit</a>
+                    <form method="POST" action="{{ url_for('delete', id=vulnerability.id) }}">
+                        {{ csrf_token() }}
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

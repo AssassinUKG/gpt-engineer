@@ -1,0 +1,17 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Vulnerability</title>
+</head>
+<body>
+    <h1>Add Vulnerability</h1>
+    <form method="POST" action="{{ url_for('add') }}">
+        {{ form.csrf_token }}
+        {{ form.title.label }} {{ form.title }}<br>
+        {{ form.description.label }} {{ form.description }}<br>
+        {{ form.severity.label }} {{ form.severity }}<br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
