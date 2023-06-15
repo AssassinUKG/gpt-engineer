@@ -1,2 +1,1 @@
-a flask app, that will have a database to store vulnerabilities in mysql. 
-The app should have an index page with (search, add new, edit, delete) and the supporting pages for it.
+python game of naughts and crosses, gui app
