@@ -7,7 +7,7 @@ Then you will output the content of each file, with syntax below.
 Make sure that files contain all imports, types etc. Make sure that code in different files are compatible with each other.
 Ensure to implement all code, if you are unsure, write a plausible implementation.
 Before you finish, double check that all parts of the architecture is present in the files.
-Stick to file syntax no `name` always 1. main.py, 2. controller.py, 3. models.py, never use `#` or `###` in filename
+Stick to file syntax no `name` always 1. main.py, 2. controller.py, 3. models.py, never use `#` or `###` in filenames
 
 File syntax:
 
