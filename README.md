@@ -1,4 +1,4 @@
-# UPDATED VERSION: 
+# UPDATED VERSION *SUPPORTS GPT3.5*: 
 Now supports chat gpt3.5 you MUST still export your API key as OPENAI_API_KEY
 
 ## ISSUES from me: 
